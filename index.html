@@ -1,59 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Flexbox Pricing Table</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Hubot+Sans:ital,wght@0,200..900;1,200..900&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Hubot+Sans:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet">
-  <link rel=" stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" />
-  <link rel=" stylesheet" href="./style.css" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-  <div class="pricing-container">
+  <main class="page-shell">
+    <section class="pricing-container">
+      <article class="pricing-plan">
+        <p class="plan-tag">Lonely souls</p>
+        <div class="headings">
+          <div class="plan-title">Mild Chaos</div>
+          <div class="plan-price">£7.99</div>
+          <p class="plan-billing">per month</p>
+        </div>
+        <ul class="plan-features">
+          <li>1 small cursed item</li>
+          <li>A cryptic note</li>
+          <li>A questionable extra</li>
+        </ul>
+        <button class="plan-button" type="button"><span>Accept Fate</span></button>
+      </article>
 
-    <div class="pricing-plan">
-      <div class="headings">
-        <div class="plan-title">Basic</div>
-        <div class="plan-price">$9.99/month</div>
-      </div>
-      <ul class="plan-features">
-        <li><span>&#10004; </span> 10GB Storage</li>
-        <li><span>&#10004; </span> 1 User</li>
-        <li><span>&#10006; </span> Support</li>
-      </ul>
-      <button class="plan-button">Sign Up</button>
-    </div>
+      <article class="pricing-plan featured-plan">
+        <p class="plan-tag featured-tag">Most popular</p>
+        <div class="headings">
+          <div class="plan-title">Odd Delivery</div>
+          <div class="plan-price">£14.99</div>
+          <p class="plan-billing">per month</p>
+        </div>
+        <ul class="plan-features">
+          <li>2 cursed items</li>
+          <li>A monthly incident card</li>
+          <li>A strange collectible</li>
+        </ul>
+        <button class="plan-button" type="button"><span>Embrace Chaos</span></button>
+      </article>
 
-    <div class="pricing-plan">
-      <div class="headings">
-        <div class="plan-title">Standard</div>
-        <div class="plan-price">$19.99/month</div>
-      </div>
-      <ul class="plan-features">
-        <li><span>&#10004; </span> 50GB Storage</li>
-        <li><span>&#10004; </span> 5 Users</li>
-        <li><span>&#10004; </span> Phone &amp; Email Support</li>
-      </ul>
-      <button class="plan-button">Sign Up</button>
-    </div>
-
-    <div class="pricing-plan">
-      <div class="headings">
-        <div class="plan-title">Premium</div>
-        <div class="plan-price">$49.99/month</div>
-      </div>
-      <ul class="plan-features">
-        <li><span>&#10004; </span> 100GB Storage</li>
-        <li><span>&#10004; </span> 10 Users</li>
-        <li><span>&#10004; </span> 24/7 Support</li>
-      </ul>
-      <button class="plan-button">Sign Up</button>
-    </div>
-  </div>
+      <article class="pricing-plan">
+        <p class="plan-tag">Poor decisions</p>
+        <div class="headings">
+          <div class="plan-title">Full Curse</div>
+          <div class="plan-price">£29.99</div>
+          <p class="plan-billing">per month</p>
+        </div>
+        <ul class="plan-features">
+          <li>3 cursed items</li>
+          <li>An unsettling note</li>
+          <li>An "extra" item</li>
+        </ul>
+        <button class="plan-button" type="button"><span>Take the Risk</span></button>
+      </article>
+    </section>
+  </main>
 </body>
 
 </html>

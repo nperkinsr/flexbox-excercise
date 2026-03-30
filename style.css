@@ -27,11 +27,15 @@ body {
   font-family: "Hubot Sans", sans-serif;
   color: var(--text);
   background:
-    radial-gradient(circle at top, rgba(255, 255, 255, 0.95), rgba(248, 250, 252, 0) 42%),
+    radial-gradient(
+      circle at top,
+      rgba(255, 255, 255, 0.95),
+      rgba(248, 250, 252, 0) 42%
+    ),
     linear-gradient(180deg, #ffffff 0%, var(--bg) 100%);
 }
 
-.page-shell {
+.page-wrapper {
   width: min(1120px, calc(100% - 32px));
   margin: 0 auto;
   padding: 88px 0;
@@ -186,7 +190,9 @@ body {
   cursor: pointer;
   overflow: hidden;
   isolation: isolate;
-  transition: color 0.25s ease, border-color 0.25s ease;
+  transition:
+    color 0.25s ease,
+    border-color 0.25s ease;
 }
 
 .plan-button span {
@@ -252,7 +258,7 @@ body {
 }
 
 @media (max-width: 900px) {
-  .page-shell {
+  .page-wrapper {
     padding: 56px 0;
   }
 
@@ -270,7 +276,7 @@ body {
 }
 
 @media (max-width: 680px) {
-  .page-shell {
+  .page-wrapper {
     width: min(100% - 24px, 540px);
     padding: 32px 0 40px;
   }
